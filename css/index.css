@@ -173,6 +173,7 @@ img {
 }
 .navbar .nav-content {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 800px;
@@ -186,6 +187,7 @@ img {
 }
 .navbar .nav-links {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 45%;
@@ -270,6 +272,7 @@ img {
 }
 .home .content-pick .destination .btn {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: #107282;
@@ -277,4 +280,9 @@ img {
   padding: 1.6rem 1.2rem;
   border-radius: 18px;
   font-size: 1.8rem;
+  transition: background 200ms ease-out;
+}
+.home .content-pick .destination .btn:hover {
+  background: #17A2B8;
+  cursor: pointer;
 }

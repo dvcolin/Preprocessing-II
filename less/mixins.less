@@ -1,14 +1,21 @@
-.displayFlex(@justify, @align) {
+.displayFlex(@direction, @justify, @align) {
   display: flex;
+  flex-direction: @direction;
   justify-content: @justify;
   align-items: @align;
 }
 
 .button(@bg, @color, @pv, @ph) {
-  .displayFlex(center, center);
+  .displayFlex(row, center, center);
   background: darken(@bg, 12%);
   color: @color;
   padding: @pv @ph;
   border-radius: 18px;
   font-size: 1.8rem;
+  transition: background 200ms ease-out;
+
+  &:hover {
+      background: @bg;
+      cursor: pointer;
+  }
 }
