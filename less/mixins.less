@@ -1,12 +1,14 @@
 .displayFlex(@justify, @align) {
-    display: flex;
-    justify-content: @justify;
-    align-items: @align;
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
 }
 
-.navFont {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    color: black;
-    text-decoration: none;
+.button(@bg, @color, @pv, @ph) {
+  .displayFlex(center, center);
+  background: darken(@bg, 12%);
+  color: @color;
+  padding: @pv @ph;
+  border-radius: 18px;
+  font-size: 1.8rem;
 }

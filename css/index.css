@@ -1,9 +1,3 @@
-.navFont {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  color: black;
-  text-decoration: none;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,16 +169,19 @@ img {
   margin: 0 auto;
 }
 .navbar {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.navbar .nav-content {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 800px;
+  padding: 2.6rem 0;
   margin: 0 auto;
-  padding: 3.6rem;
 }
 .navbar .nav-logo {
   margin-right: auto;
-  font-family: 'Indie Flower', serif;
+  font-family: "Indie Flower", serif;
   font-size: 3.5rem;
 }
 .navbar .nav-links {
@@ -194,9 +191,9 @@ img {
   width: 45%;
 }
 .navbar .nav-links .nav-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  color: black;
+  color: #212529;
   text-decoration: none;
 }
 .footer {
@@ -209,6 +206,21 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header .fun-bus-img {
+  width: 100%;
+  height: 200px;
+  background: url(../img/fun-bus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home header .header-text {
+  margin-top: 2.4rem;
+  padding-bottom: 1.6rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -255,4 +267,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #107282;
+  color: #FFFFFF;
+  padding: 1.6rem 1.2rem;
+  border-radius: 18px;
+  font-size: 1.8rem;
 }
