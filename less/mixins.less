@@ -1,1 +1,28 @@
-// Mixins in here
+.displayFlex(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+// BUTTON MIXIN
+.button(@bg, @color, @pv, @ph) {
+  .displayFlex(row, center, center);
+  background: darken(@bg, 12%);
+  color: @color;
+  padding: @pv @ph;
+  border-radius: 18px;
+  font-size: 1.8rem;
+  transition: background 200ms ease-out;
+  width: 90%;
+
+  @media @mobile {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  &:hover {
+      background: @bg;
+      cursor: pointer;
+  }
+}

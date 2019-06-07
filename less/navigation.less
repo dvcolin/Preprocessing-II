@@ -1,1 +1,52 @@
-// Navigation Styles here
+.navbar {
+  border-bottom: 2px dashed @silver;
+  width: 850px;
+  margin: 0 auto;
+
+  .nav-content {
+    .displayFlex(row, flex-end, center);
+    width: 800px;
+    padding: 2.6rem 0;
+    margin: 0 auto;
+
+    @media @mobile {
+      padding: 1.5rem;
+      margin: 0 auto;
+      width: 100%;
+      .displayFlex(column, center, center);
+    }
+  }
+
+  .nav-logo {
+    margin-right: auto;
+    font-family: "Indie Flower", serif;
+    font-size: 3.5rem;
+
+    @media @mobile {
+      font-size: 3rem;
+      width: 100%;
+      text-align: center;
+      margin: 1.3rem 0;
+    }
+  }
+
+  .nav-links {
+    .displayFlex(row, space-around, center);
+    width: 45%;
+
+    .nav-link {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.6rem;
+      color: @shark;
+      text-decoration: none;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  @media @mobile {
+    width: 500px;
+  }
+}
